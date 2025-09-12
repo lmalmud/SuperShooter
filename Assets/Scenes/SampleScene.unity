@@ -644,12 +644,16 @@ PrefabInstance:
     - target: {fileID: 4714767770899008671, guid: c1fb5f02728004fb1bd32a48684039fe,
         type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Moving Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4714767770899008671, guid: c1fb5f02728004fb1bd32a48684039fe,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2008274632}
   m_SourcePrefab: {fileID: 100100000, guid: c1fb5f02728004fb1bd32a48684039fe, type: 3}
 --- !u!1 &832575517
 GameObject:
@@ -969,6 +973,25 @@ Transform:
   - {fileID: 1139291861}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2008274627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4714767770899008671, guid: c1fb5f02728004fb1bd32a48684039fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 783186142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2008274632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008274627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c386f1ae54e495ba4f31c13911532c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
 --- !u!1001 &3345390250022100205
 PrefabInstance:
   m_ObjectHideFlags: 0
