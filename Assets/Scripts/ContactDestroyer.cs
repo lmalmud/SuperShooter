@@ -5,10 +5,12 @@ using UnityEngine;
 public class ContactDestroyer : MonoBehaviour
 {
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
         // autodestroies on contact with something
         Destroy(gameObject);
+        print("i hit something");
+        Destroy(other.gameObject);
     }
 
 }
