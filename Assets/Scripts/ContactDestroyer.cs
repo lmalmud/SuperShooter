@@ -9,7 +9,6 @@ public class ContactDestroyer : MonoBehaviour
     {
         // autodestroies on contact with something
         Destroy(gameObject);
-        print("i hit something");
         Destroy(other.gameObject);
     }
 
