@@ -18,6 +18,7 @@ public class PlayerShooting : MonoBehaviour
             GameObject clone = Instantiate(prefab);
             clone.transform.position = shootPoint.transform.position;
             clone.transform.rotation = shootPoint.transform.rotation;
+            print("click!!!");
         }
         /*
             // GetKeyDown will only execute once they key has been pressed and released,
