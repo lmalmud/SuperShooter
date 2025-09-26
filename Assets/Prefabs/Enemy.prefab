@@ -414,7 +414,11 @@ MonoBehaviour:
   currentState: 0
   baseTransform: {fileID: 6758299377563589522, guid: 82bd0d6d9538848a78dfdd6b08c53161,
     type: 3}
-  baseAttackDistance: 0
-  playerAttackDistance: 0
+  baseAttackDistance: 1
+  playerAttackDistance: 1
   sightSensor: {fileID: 5934267052123043949}
-  attackBufferDistance: 0
+  attackBufferDistance: 1
+  bulletPrefab: {fileID: 3417639903072220003, guid: bfbda9bb32e7a4f86b9810a6d46789ca,
+    type: 3}
+  lastShootTime: 0
+  fireRate: 1
