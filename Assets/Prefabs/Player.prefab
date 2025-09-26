@@ -131,13 +131,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4146262433677205225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.39488173, z: 0.255}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.0032798122, y: 0.0044175186, z: 0.30254546, w: 0.9531191}
+  m_LocalPosition: {x: 0.9, y: 0.44, z: -0.08}
+  m_LocalScale: {x: 0.85858, y: 0.85858, z: 0.85858}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8248342968201061197}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.205, y: 0.596, z: 35.223}
 --- !u!1 &4809719075171894005
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8a1fa8245014e2ab45754119927204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3820800439219464985, guid: f7b72cdf6e7804cac9839791517fabed, type: 3}
+  prefab: {fileID: 13913106653773725, guid: 63022a7b249724aa7afe6b77e820ea07, type: 3}
   shootPoint: {fileID: 4146262433677205225}
 --- !u!114 &1403599737985521330
 MonoBehaviour:

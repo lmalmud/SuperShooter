@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
     public float speed;
     public float rotationSpeed;
     private Vector2 movementValue;
@@ -28,19 +28,19 @@ public class PlayerMovement : MonoBehaviour
         Cursor.visible = false; // Make cursor invisible
         Cursor.lockState = CursorLockMode.Locked; // Lock so that the cursor is in the middle of the screen
 
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        rigidbody.AddRelativeForce(
+        rb.AddRelativeForce(
             movementValue.x * Time.deltaTime,
             0,
             movementValue.y * Time.deltaTime
         );
 
-        rigidbody.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
+        rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
     }
 }
