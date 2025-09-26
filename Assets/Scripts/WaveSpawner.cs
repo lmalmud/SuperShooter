@@ -12,12 +12,19 @@ public class WaveSpawner : MonoBehaviour
 
     void Start()
     {
+        WavesManager.instance.waves.Add(this);
         InvokeRepeating("Spawn", startTime, spawnRate);
-        Invoke("CancelInvoke", endTime); // note that if CancelInvoke had arguments, we would need a wrapper
+        Invoke("EndSpawner", endTime);
     }
 
     void Spawn()
     {
         Instantiate(prefab, transform.position, transform.rotation);
+    }
+
+    void EndSpawner()
+    {
+        WavesManager.instance.waves.Remove(this);
+        CancelInvoke();
     }
 }

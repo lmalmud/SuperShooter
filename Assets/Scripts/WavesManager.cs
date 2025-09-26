@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemiesManager : MonoBehaviour
+public class WavesManager : MonoBehaviour
 {
-
-    public List<Enemy> enemies;
-
-    public static EnemiesManager instance;
+    public static WavesManager instance;
+    public List<WaveSpawner> waves;
 
     private void Awake()
     {
@@ -17,8 +15,7 @@ public class EnemiesManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Duplicated EnemiesManager", gameObject);
+            Debug.LogError("Duplicated WavesManager", gameObject);
         }
     }
-
-}   
+}
