@@ -94,7 +94,7 @@ public class EnemyFSM : MonoBehaviour
         LookTo(sightSensor.detectedObject.transform.position);
         Shoot();
 
-        float distanceToPlayer = Vector3.Distance(baseTransform.position, sightSensor.detectedObject.transform.position);
+        float distanceToPlayer = Vector3.Distance(transform.position, sightSensor.detectedObject.transform.position);
 
         if (distanceToPlayer > playerAttackDistance * attackBufferDistance)
         {
@@ -109,7 +109,7 @@ public class EnemyFSM : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, playerAttackDistance);
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(baseTransform.position, baseAttackDistance);
+        Gizmos.DrawWireSphere(transform.position, baseAttackDistance);
     }
 
     void Shoot()
@@ -119,14 +119,14 @@ public class EnemyFSM : MonoBehaviour
         if (timeSinceLastShoot > fireRate)
         {
             lastShootTime = Time.time;
-            Instantiate(bulletPrefab, baseTransform.position, baseTransform.rotation);
+            Instantiate(bulletPrefab, transform.position, transform.rotation);
         }
     }
 
     void LookTo(Vector3 targetPosition)
     {
-        Vector3 directionToPosition = Vector3.Normalize(targetPosition - baseTransform.parent.position);
+        Vector3 directionToPosition = Vector3.Normalize(targetPosition - transform.parent.position);
         directionToPosition.y = 0;
-        baseTransform.parent.forward = directionToPosition;
+        transform.parent.forward = directionToPosition;
     }
 }
