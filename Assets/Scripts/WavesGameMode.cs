@@ -14,15 +14,11 @@ public class WavesGameMode : MonoBehaviour
     void Start()
     {
 
-        Debug.Log($"Player Life object: {playerLife?.gameObject.name}"); // Add this
-        Debug.Log($"Player Base Life object: {playerBaseLife?.gameObject.name}"); // Add this
-
         playerLife.onDeath.AddListener(OnPlayerOrBaseDied);
         playerBaseLife.onDeath.AddListener(OnPlayerOrBaseDied);
         EnemiesManager.instance.onChanged.AddListener(CheckWinCondition);
         WavesManager.instance.onChanged.AddListener(CheckWinCondition);
 
-        Debug.Log("All listeners added successfully!"); // Add this
     }
     void CheckWinCondition()
     {
@@ -35,8 +31,6 @@ public class WavesGameMode : MonoBehaviour
 
     void OnPlayerOrBaseDied()
     {
-        Debug.Log("OnPlayerOrBaseDied called! Loading LoseScreen..."); // Add this line
-    SceneManager.LoadScene("LoseScreen");
         SceneManager.LoadScene("LoseScreen");
     }
 }
