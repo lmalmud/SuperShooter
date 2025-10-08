@@ -1,3 +1,9 @@
+# HW 4: Chapters 3, 4, 10
+- You can see the floating sky cube which implements the initial texture and the pile of water (on the right) which implements the main part of the chapter
+- Everything is in the scene called "Game"
+- I tried to also integrate with the things from the previous chapter- so the player now has a texture and the enemies can walk on the NavMesh that is on the surface we made this time around
+- The player still shoots and moves (just really slowly)
+
 # HW3: Chapters 7, 8, 9
 - The enemies are not very good at getting the player, so to check the win condition, it may be better to manually set ```Life > amount``` to be zero
 - Movement is WASD, but the player glides around very smoothly so it might be tricky (sorry)
