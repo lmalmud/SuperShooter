@@ -115,7 +115,6 @@ public class EnemyFSM : MonoBehaviour
     void Shoot()
     {
         var timeSinceLastShoot = Time.time - lastShootTime;
-        print("shooting");
         if (timeSinceLastShoot > fireRate)
         {
             lastShootTime = Time.time;
