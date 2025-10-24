@@ -18,6 +18,8 @@ public class EnemyFSM : MonoBehaviour
     public float lastShootTime;
     public float fireRate;
 
+    public ParticleSystem muzzleEffect;
+
     private void Awake()
     {
         // so that when new enemies spawn in, they will be able to find the base
@@ -115,11 +117,12 @@ public class EnemyFSM : MonoBehaviour
     void Shoot()
     {
         var timeSinceLastShoot = Time.time - lastShootTime;
-        if (timeSinceLastShoot > fireRate)
-        {
-            lastShootTime = Time.time;
-            Instantiate(bulletPrefab, transform.position, transform.rotation);
-        }
+        if (timeSinceLastShoot < fireRate)
+            return;
+
+        lastShootTime = Time.time;
+        Instantiate(bulletPrefab, transform.position, transform.rotation);
+        muzzleEffect.Play();
     }
 
     void LookTo(Vector3 targetPosition)

@@ -10,6 +10,8 @@ public class PlayerShooting : MonoBehaviour
 
     public GameObject shootPoint;
 
+    public ParticleSystem muzzleEffect;
+
     // Update was replaced by OnFire
     void OnFire(InputValue value)
     {
@@ -20,7 +22,7 @@ public class PlayerShooting : MonoBehaviour
             clone.transform.position = shootPoint.transform.position;
             clone.transform.rotation = shootPoint.transform.rotation;
 
-
+            muzzleEffect.Play();
         }
 
     }

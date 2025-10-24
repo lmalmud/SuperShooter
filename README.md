@@ -1,3 +1,8 @@
+# HW 5: Chapters 11, 12, 13
+- To see that the enemies have explosions upon death, you can manually set "Amount" to 0 in the editor and they will blow up (sorry, they are hard to shoot and/or look at)
+- There is a bonfire and waterfall implemented on the side of the scene
+- There is a light rain over the entire scene (sorry if it is difficult to see)
+
 # HW 4: Chapters 3, 4, 10
 - You can see the floating sky cube which implements the initial texture and the pile of water (on the right) which implements the main part of the chapter
 - Everything is in the scene called "Game"

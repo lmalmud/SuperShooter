@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class ExplosionOnDeath : MonoBehaviour
 {
-
     public GameObject particlePrefab;
 
     void Awake()
     {
-        var life = GetComponent<life>();
-        life.onDeath.AddListener(ExplosionOnDeath);
+        var life = GetComponent<Life>();
+        life.onDeath.AddListener(OnDeath);
     }
 
     void OnDeath()
