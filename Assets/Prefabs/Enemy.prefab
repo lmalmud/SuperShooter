@@ -330,7 +330,7 @@ MonoBehaviour:
     type: 3}
   lastShootTime: 0
   fireRate: 1
-  muzzleEffect: {fileID: 0}
+  muzzleEffect: {fileID: 7559459135447077570}
 --- !u!1001 &1410814564446045888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -501,6 +501,12 @@ PrefabInstance:
 --- !u!4 &1115687808262092608 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4638377481891691631, guid: 83ad694f134ab954580473212156b35a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5703082804215089967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7559459135447077570 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2868216338370173421, guid: 83ad694f134ab954580473212156b35a,
     type: 3}
   m_PrefabInstance: {fileID: 5703082804215089967}
   m_PrefabAsset: {fileID: 0}
