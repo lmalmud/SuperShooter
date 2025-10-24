@@ -41,6 +41,6 @@ public class PlayerMovement : MonoBehaviour
             movementValue.y * Time.deltaTime
         );
 
-        rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
+        transform.Rotate(0, lookValue * Time.deltaTime, 0);
     }
 }

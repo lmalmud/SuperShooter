@@ -35,7 +35,8 @@ public class CameraFollowPlayer : MonoBehaviour
         Vector3 lookPoint = target.position + target.forward * lookAhead + Vector3.up * lookUp;
 
         // Smooth rotation towards that look point
-        Quaternion desiredRotation = Quaternion.LookRotation(lookPoint - transform.position, Vector3.up);
+        Quaternion desiredRotation = Quaternion.LookRotation(lookPoint - transform.position, Vector3.up);        
         transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, smoothSpeed * Time.deltaTime);
+        
     }
 }
