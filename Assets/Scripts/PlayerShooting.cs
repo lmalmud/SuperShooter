@@ -8,6 +8,8 @@ public class PlayerShooting : MonoBehaviour
 
     public GameObject prefab;
 
+    public int bulletsAmount=100;
+
     public GameObject shootPoint;
 
     public ParticleSystem muzzleEffect;
@@ -16,8 +18,10 @@ public class PlayerShooting : MonoBehaviour
     // Update was replaced by OnFire
     void OnFire(InputValue value)
     {
-        if (value.isPressed) // only runs when the key is released
+        if (value.isPressed && bulletsAmount > 0) // only runs when the key is released
         {
+
+            bulletsAmount--;
 
             GameObject clone = Instantiate(prefab);
             clone.transform.position = shootPoint.transform.position;
