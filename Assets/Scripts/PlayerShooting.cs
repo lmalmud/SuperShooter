@@ -11,6 +11,7 @@ public class PlayerShooting : MonoBehaviour
     public GameObject shootPoint;
 
     public ParticleSystem muzzleEffect;
+    public AudioSource shootSound;
 
     // Update was replaced by OnFire
     void OnFire(InputValue value)
@@ -23,6 +24,7 @@ public class PlayerShooting : MonoBehaviour
             clone.transform.rotation = shootPoint.transform.rotation;
 
             muzzleEffect.Play();
+            shootSound.Play();
         }
 
     }

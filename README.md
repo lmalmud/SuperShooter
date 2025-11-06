@@ -1,3 +1,7 @@
+# HW 6: Chapters 14
+- I am using A Childs Dream 1min7s Raining Effect (SD Sound Track) and A Childs Dream (2min29s) for music
+- I am using Single_GUnshot_Sci-Fi_Gun
+
 # HW 5: Chapters 11, 12, 13
 - To see that the enemies have explosions upon death, you can manually set "Amount" to 0 in the editor and they will blow up (sorry, they are hard to shoot and/or look at)
 - There is a bonfire and waterfall implemented on the side of the scene
