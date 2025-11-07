@@ -42,6 +42,7 @@ public class EnemyFSM : MonoBehaviour
     void GoToBase()
 
     {
+        animator.SetBool("Shooting", false);
         agent.isStopped = false;
         agent.SetDestination(baseTransform.position);
 
@@ -69,6 +70,7 @@ public class EnemyFSM : MonoBehaviour
 
     void ChasePlayer()
     {
+        animator.SetBool("Shooting", false);
         agent.isStopped = false;
 
         if (sightSensor.detectedObject == null) // if the eneemy doesn't see anything anymore, then go back to base
@@ -119,6 +121,7 @@ public class EnemyFSM : MonoBehaviour
 
     void Shoot()
     {
+        animator.SetBool("Shooting", true);
         var timeSinceLastShoot = Time.time - lastShootTime;
         if (timeSinceLastShoot < fireRate || Time.timeScale <= 0)
             return;
