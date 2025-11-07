@@ -18,7 +18,7 @@ public class PlayerShooting : MonoBehaviour
     // Update was replaced by OnFire
     void OnFire(InputValue value)
     {
-        if (value.isPressed && bulletsAmount > 0) // only runs when the key is released
+        if (value.isPressed && bulletsAmount > 0 && Time.timeScale > 0) // only runs when the key is released
         {
 
             bulletsAmount--;
