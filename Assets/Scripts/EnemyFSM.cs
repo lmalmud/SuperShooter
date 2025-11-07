@@ -20,11 +20,14 @@ public class EnemyFSM : MonoBehaviour
 
     public ParticleSystem muzzleEffect;
 
+    Animator animator;
+
     private void Awake()
     {
         // so that when new enemies spawn in, they will be able to find the base
         baseTransform = GameObject.Find("BaseDamagePoint").transform;
         agent = GetComponentInParent<NavMeshAgent>();
+        animator = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
