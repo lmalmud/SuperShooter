@@ -1,6 +1,6 @@
 # HW 6: Chapters 14
-- I am using A Childs Dream 1min7s Raining Effect (SD Sound Track) and A Childs Dream (2min29s) for music
-- I am using Single_GUnshot_Sci-Fi_Gun
+- The settings to move the player may be a little sensitive, but you can kill the enemies by staying still and just rotating to aim at them
+- You'll see the walking animation kick in after moving a little. It may take a moment to stop as the velocity returns to zero.
 
 # HW 5: Chapters 11, 12, 13
 - To see that the enemies have explosions upon death, you can manually set "Amount" to 0 in the editor and they will blow up (sorry, sometimes they are hard to shoot and/or look at but you can spam click and it should work)
